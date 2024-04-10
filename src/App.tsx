@@ -20,24 +20,6 @@ const App = () => {
     <BrowserRouter>
         <h1 className='text-white'>hjk</h1>
 
-      <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar />
-          <h1 className='text-white'>hhjk</h1>
-
-          <h1>faay</h1>
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
-        <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
-        </div>
-      </div>
     </BrowserRouter>
   
   );
