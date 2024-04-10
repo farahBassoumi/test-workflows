@@ -7,7 +7,7 @@ const App = () => {
   return (
     
     <BrowserRouter>
-        <h1 className='text-white'>hjk</h1>
+        <h1>hjk</h1>
 
     </BrowserRouter>
   
