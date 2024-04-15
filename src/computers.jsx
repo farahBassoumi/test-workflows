@@ -7,8 +7,8 @@ import { createRoot } from "react-dom/client";
 
 
 const Computers = ({ isMobile }) => {
-  const container=document.getElementById('root');
-  const root=createRoot(container);
+  // const container=document.getElementById('root');
+  // const root=createRoot(container);
   GLTFLoader.prototype.setPath('/test-workflows/public'); // Replace with your details
 
   const computer = useGLTF("/robot/scene.gltf");
