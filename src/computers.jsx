@@ -10,7 +10,7 @@ const Computers = ({ isMobile }) => {
   // const container=document.getElementById('root');
   // const root=createRoot(container);
   //GLTFLoader.prototype.setPath('/test-workflows/public'); 
-  const computer = useGLTF("https://github.com/farahBassoumi/test-workflows/blob/main/public/robot/scene.gltf");
+  const computer = useGLTF("https://github.com/farahBassoumi/test-workflows/robot/scene.gltf");
   return (
     <mesh>
       <hemisphereLight intensity={1} groundColor="black" />
