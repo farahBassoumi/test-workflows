@@ -9,9 +9,8 @@ import { createRoot } from "react-dom/client";
 const Computers = ({ isMobile }) => {
   // const container=document.getElementById('root');
   // const root=createRoot(container);
-  GLTFLoader.prototype.setPath('/test-workflows/public'); // Replace with your details
-
-  const computer = useGLTF("/robot/scene.gltf");
+  //GLTFLoader.prototype.setPath('/test-workflows/public'); 
+  const computer = useGLTF("https://farahbassoumi.github.io/test-workflows/public/robot/scene.gltf");
   return (
     <mesh>
       <hemisphereLight intensity={1} groundColor="black" />
