@@ -1,12 +1,17 @@
-//import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { createRoot } from "react-dom/client";
 // import CanvasLoader from "../Loader";
 
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("../public/robot/scene.gltf");
+  const container=document.getElementById('root');
+  const root=createRoot(container);
+  GLTFLoader.prototype.setPath('/test-workflows/public'); // Replace with your details
+
+  const computer = useGLTF("/robot/scene.gltf");
   return (
     <mesh>
       <hemisphereLight intensity={1} groundColor="black" />
